@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Modals Example</title>
+    <style>
+      /* Modal styles (you can customize this as per your design) */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .modal-content {
+        background-color: #fff;
+        padding: 20px;
+        max-width: 400px;
+        margin: 50px auto;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .modal-close {
+        float: right;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Modal 1 -->
+    <button onclick="openModal('modal1')">Open Modal 1</button>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal1')">&times;</span>
+        <h2>OVO</h2>
+        <iframe src="https://bing.com"></iframe>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <button onclick="openModal('modal2')">Open Modal 2</button>
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Modal 2</h2>
+        <p>This is the content of Modal 2.</p>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <button onclick="openModal('modal3')">Open Modal 3</button>
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Modal 3</h2>
+        <p>This is the content of Modal 3.</p>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript functions to open and close modals
+      function openModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "block";
+      }
+
+      function closeModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "none";
+      }
+
+    </script>
+
+  </body>
+
+</html>

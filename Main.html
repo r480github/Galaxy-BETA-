@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<link
+  href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"
+  rel="stylesheet"
+/>
+
+<html Land="en">
+  <head>
+    <li>
+      <button
+        onclick="window.location.href='Main.html';"
+        class="logo"
+        id="saveForm"
+      >
+        Galaxy
+      </button>
+    </li>
+
+    <li>
+      <button
+        onclick="window.location.href='Main.html';"
+        class="Homebtn"
+        id="saveForm"
+      >
+        Home
+      </button>
+    </li>
+
+    <li>
+      <button
+        onclick="window.location.href='Games.html';"
+        class="Games"
+        id="saveForm"
+      >
+        Games
+      </button>
+    </li>
+
+    <!-- <li><button
+            onclick="window.location.href='Apps.html';"  class="Apps" id="saveForm"> Apps
+            </button>
+            </li>
+      -->
+    <meta charset="UTF-8" />
+    <title>Galaxy</title>
+    <link rel="stylesheet" href="Home.css" />
+  </head>
+  <body></body>
+</html>
+<!--START OF STARBACK HTML-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <section id="hero">
+        <canvas id="canvas"></canvas>
+
+        <div class="buttons"></div>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+
+    <script>
+      const starback = new Starback("#canvas", {
+        width: document.body.clientWidth,
+        height: document.body.clientHeight,
+        type: "line",
+        speed: 5,
+        frequency: 5,
+        slope: { x: -1, y: 10 },
+        directionX: 1,
+        speed: 3,
+        spread: -10,
+        randomOpacity: true,
+        backgroundColor: ["#0F2027", "#203A43", "#2C5364"],
+        quantity: 30,
+      });
+
+      let mountain = new Image();
+      mountain.src = "img/mountain2.png";
+
+      mountain.onload = () => {
+        starback.addToFront((ctx) => {
+          ctx.drawImage(
+            mountain,
+            0,
+            0,
+            mountain.width,
+            mountain.height,
+            0,
+            canvas.height - mountain.height,
+            canvas.width,
+            mountain.height
+          );
+        });
+      };
+    </script>
+  </body>
+</html>
+<!--END OF STARBACK HTML-->
+<style>
+  body {
+    overflow: hidden;
+  }
+</style>
+<body></body>
+<script>
+  const cursor = document.querySelector(".cursor");
+
+  window.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.pageX + "px";
+    cursor.style.top = e.pageY + "px";
+    cursor.setAttribute("data-fromTop", cursor.offsetTop - scrollY);
+    // console.log(e)
+  });
+  window.addEventListener("scroll", () => {
+    const fromTop = cursor.getAttribute("data-fromTop");
+    cursor.style.top = scrollY + parseInt(fromTop) + "px";
+    console.log(scrollY);
+  });
+  window.addEventListener("click", () => {
+    if (cursor.classList.contains("click")) {
+      cursor.classList.remove("click");
+      void cursor.offsetWidth; // trigger a DOM reflow
+      cursor.classList.add("click");
+    } else {
+      cursor.classList.add("click");
+    }
+  });
+</script>
+
+<!--WELCOME SCREEN-->
+<body>
+  <div id="app">
+    <section id="hero">
+      <div class="content">
+        <h1>Welcome to <span class="text-highlight">Galaxy</span></h1>
+      </div>
+    </section>
+  </div>
+</body>
