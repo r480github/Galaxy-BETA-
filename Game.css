@@ -1,0 +1,58 @@
+body{
+  background: #2C5364;
+  height: 100vh;
+}
+iframe{
+  width: 100%;
+  height: 85%;
+}
+
+button{
+  height: 50px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 75%;
+  height: 75%;
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close{
+  font-size: 50px;
+  cursor: pointer;
+}
+.spam{
+  float: left;
+  cursor: pointer;
+  font-size: 75px;
+  z-index: 10;
+}
+.allBTN{
+  height:100%;
+  width:100%;
+  position: fixed;
+  float: left;
+  top: 10%;
+  left: 2%;
+}
+.layout{
+
+  justify-content: center;
+  align-items: center;
+  float:left;
+  padding-left: 10px;
+}
