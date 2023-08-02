@@ -1,30 +1,21 @@
-
-
 /*    GAME PAGE BACKGROUND EFFECT    */
 
 canvas {
   margin-top: -160px;
+  height: 114vh;
+  width: 100%;
 }
+
 /* END OF GAME PAGE BACKGROUND EFFECT*/
 
 
 body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
-  height: 102vh;
-  width: 240vh;
- }
-
-.circles {
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 100%;
   width: 100%;
-  height: 200%;
-  overflow: hidden;
+  position: relative;
 }
-
-
 
 .logo {
   position: relative;
@@ -45,71 +36,13 @@ body {
   transition-duration: 0.3s;
 }
 
-.Games {
-  position: relative;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: white;
-  background-color: transparent;
-  font-size: 30px;
-  border-color: transparent;
-  left: 60%;
-  top: -70px;
-  transition-duration: 0.5s;
-  z-index: 100;
-
-
-}
-
-.Games:Hover {
-  background-color: #101111;
-
-}
-
 /*     START OF GAME CSS     */
-.lazy {
-  position: relative;
-  width: 170px;
-  height: auto;
-  transition-duration: 0.3s;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  background-color: transparent;
-  z-index: 100;
-  float: left;
-  vertical-align: middle;
-
-}
-
-.lazy:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(2.2);
-  transform: scale(1.2);
-  z-index: 100;
-}
-
-.layout {
-  float: left;
-  padding: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 40px;
-  padding-top: 0px;
-
-}
-
-/*END OF GAME CSS*/
-
-
 /*WELCOME SCREEN*/
 #hero .content {
   z-index: 1;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  left:  0%;
+  bottom: 30%;
   display: flex;
   width: 100%;
   height: 100%;
@@ -125,15 +58,16 @@ body {
   width: clamp(300px, 60vw, 80%);
   margin-bottom: 2rem;
   opacity: 0;
-  animation: goUp 1s cubic-bezier(0, 0.55, 0.45, 1) forwards;
+  animation: goUp 2.3s cubic-bezier(0, 0.55, 0.6, 1) forwards;
 }
 
 .text-highlight {
   position: relative;
   z-index: 5;
-    color: #937dff;
-      text-shadow: 1px 2px 10px #555;
-    }
+  color: #937dff;
+  text-shadow: 1px 2px 10px #555;
+}
+
 .text-highlight:after {
   position: absolute;
   content: '';
