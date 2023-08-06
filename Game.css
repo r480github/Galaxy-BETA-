@@ -1,14 +1,55 @@
-body{
+body {
   background: #2C5364;
   height: 100vh;
 }
-iframe{
+
+iframe {
+  position: sticky;
+  overflow: hidden;
   width: 100%;
-  height: 85%;
+  height: 80%;
 }
 
-button{
-  height: 50px;
+button {
+  position: static;
+  transition-duration: 0.3s;
+  border-radius: 20px;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: transparent;
+  z-index: 100;
+  float: left;
+  vertical-align: middle;
+  background-color: initial;
+  background-image: none;
+  border: initial;
+  color: initial;
+}
+
+button:hover {
+  -webkit-transform: scale(2.2);
+  transform: scale(1.2);
+  z-index: 100;
+}
+
+a {
+  font-size: 30px;
+  ;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+img {
+  height: 140px;
+  border-radius: 10%;
+}
+
+.iframe {
+  height: 85vh;
+}
+
+.title {
+  height: 2vh;
 }
 
 .modal {
@@ -31,28 +72,29 @@ button{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.modal-close{
+.modal-close {
   font-size: 50px;
   cursor: pointer;
 }
-.spam{
+
+.spam {
   float: left;
   cursor: pointer;
   font-size: 75px;
   z-index: 10;
 }
-.allBTN{
-  height:100%;
-  width:100%;
+
+.allBTN {
+  height: 100%;
+  width: 100%;
   position: fixed;
   float: left;
-  top: 10%;
-  left: 2%;
+  top: 13%;
+  left: 5%;
 }
-.layout{
 
-  justify-content: center;
-  align-items: center;
-  float:left;
+.layout {
+
+  float: left;
   padding-left: 10px;
 }
