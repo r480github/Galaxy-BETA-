@@ -1,0 +1,44 @@
+body {
+  background: #2C5364;
+  height: 100vh;
+}
+button{
+  position: relative;
+  top: 5%;
+  border: initial;
+  background:initial;
+  float: left;
+}
+img{
+  border-radius: 10%;
+  height: 22vh;
+  width: auto;
+  cursor: pointer;
+}
+.spam {
+  float: left;
+  cursor: pointer;
+  font-size: 75px;
+  z-index: 10;
+}
+.each {
+  position: relative;
+  padding: 1vh;
+  transition-duration: 0.3s;
+  border-radius: 20px;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: transparent;
+  float: left;
+  vertical-align: middle;
+}
+.each:hover{
+  -webkit-transform: scale(2.2);
+  transform: scale(1.2);
+
+}
+.layout{
+  width: 100%;
+  height: 100%;
+  float: left;
+}

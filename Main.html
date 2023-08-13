@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet" />
+
+<html Land="en">
+
+  <head>
+    <!--
+    <li>
+      <button onclick="window.location.href='Main.html';" class="logo" id="saveForm">
+        Galaxy
+      </button>
+    </li>
+-->
+    <meta charset="UTF-8" />
+    <title>Galaxy</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/Galaxy.png" />
+    <link rel="stylesheet" href="Home.css" />
+    <link rel="stylesheet" href="Button.css" />
+  </head>
+<body>
+  <a style="position: relative; color: White; text-align: center; left: 35%; font-size: 30px;">This website is still in its Beta Stages – not everything will work</a>
+</body>
+</html>
+<!--START OF STARBACK HTML-->
+<!DOCTYPE html>
+<html lang="en">
+
+  <body>
+    <img src="img/mountain2.png">
+    <div id="app">
+      <section id="hero">
+        <canvas id="canvas"></canvas>
+
+        <div class="buttons"></div>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+
+    <script>
+      const starback = new Starback("#canvas", {
+        width: window.innerWidth,
+        height: window.innerHeight,
+        type: "line",
+        frequency: 5,
+        slope: {
+          x: -1,
+          y: 10
+        },
+        directionX: 1,
+        speed: 3,
+        spread: -10,
+        randomOpacity: true,
+        backgroundColor: ["#0F2027", "#203A43", "#2C5364"],
+        quantity: 30,
+      });
+
+    </script>
+  </body>
+
+</html>
+<!--END OF STARBACK HTML-->
+<style>
+  body {
+    overflow: hidden;
+  }
+
+</style>
+
+<body></body>
+
+<body>
+  <!--WELCOME SCREEN-->
+  <div id="app">
+    <section id="hero">
+      <div class="content">
+        <h1>Welcome to <span class="text-highlight">Galaxy</span></h1>
+      </div>
+    </section>
+  </div>
+  <!--START OF HOME BUTTONS-->
+  <div class="container">
+    <div onclick="window.location.href='Main.html';" class="btn"><a href="#">Home</a></div>
+    <div onclick="window.location.href='Games.html';" class="btn"><a href="#">Games</a></div>
+    <div onclick="window.location.href='Apps.html';" class="btn"><a href="#">Proxies</a></div>
+  </div>
+</body>
