@@ -1,0 +1,21 @@
+h2{
+    position: absolute;
+    left: 47%;
+    margin:-50px;
+    font-size: 35px;
+    text-decoration: underline;
+}
+iframe{
+    width: 100%;
+    height: 86vh;
+    border: 2px solid black;
+}
+a{
+    position: relative;
+    font-size: 10vh;
+    text-shadow: bold;
+    cursor: pointer;
+}
+body{
+    overflow: hidden;
+}
