@@ -1,0 +1,15 @@
+{
+  "name": "Galaxy",
+  "version: "1.0.0" ,
+   "description": "A Galaxy, Full of games",
+   "repository": {
+        "type": "git",
+        "url": "git+https://github.com/r480github/Galaxy.git"
+   },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r480github/Galaxy/issues"
+  },
+  "homepage": "https://github.com/r480github/Galaxy#readme"
+}
+  
