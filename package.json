@@ -3,6 +3,9 @@
   "version": "1.0.0",
    "description": "A Galaxy, Full of games",
   "main": "Main.html",
+    "scripts": {
+    "start": "parcel index.html"
+  },
    "repository": {
         "type": "git",
         "url": "git+https://github.com/r480github/Galaxy.git"
