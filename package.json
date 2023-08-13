@@ -4,7 +4,7 @@
    "description": "A Galaxy, Full of games",
   "main": "Main.html",
     "scripts": {
-    "start": "parcel index.html"
+    "start": "Main.html"
   },
    "repository": {
         "type": "git",
