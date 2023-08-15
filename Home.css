@@ -3,7 +3,7 @@
 canvas {
   position: relative;
   z-index: -10;
-  margin-top: -200px;
+  margin-top: -25vh;
   height: 120vh;
   width: 100%;
 }
