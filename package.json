@@ -2,7 +2,7 @@
   "name": "galaxy",
   "version": "1.0.0",
   "description": "A Galaxy, Full Of Games",
-  "main": "Main.html",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
