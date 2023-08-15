@@ -10,10 +10,11 @@ button{
   float: left;
 }
 img{
+  position: relative;
   border-radius: 10%;
-  height: 22vh;
   width: auto;
   cursor: pointer;
+  height: 17vh;
 }
 .spam {
   float: left;
@@ -31,6 +32,7 @@ img{
   background-color: transparent;
   float: left;
   vertical-align: middle;
+
 }
 .each:hover{
   -webkit-transform: scale(2.2);
