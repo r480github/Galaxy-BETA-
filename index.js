@@ -298,3 +298,15 @@
     return P();
   })();
   //# sourceMappingURL=starback.global.js.map
+  function openGame() {
+    
+    var win = window.open()   
+    var url = "index.html" 
+    var iframe = win.document.createElement('iframe')
+    iframe.style.width = "100%";
+    iframe.style.height = "100%"
+    iframe.style.padding = 0;
+    iframe.style.margin = 0;
+    iframe.src = url
+    win.document.body.appendChild(iframe)
+  }
